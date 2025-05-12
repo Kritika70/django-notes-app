@@ -41,8 +41,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'This is a deploy part'
-                sh "docker compose down"
-                sh "docker compose up -d"
+                sh "docker run -d -p 8020:8000 notes-app:latest"
             }
         }
     }
