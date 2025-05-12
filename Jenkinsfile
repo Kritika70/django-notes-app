@@ -41,7 +41,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'This is a deploy part'
-                sh "docker run -d -p 8020:8000 notes-app:latest"
+                sh "docker run -d -p 8000:8000 notes-app:latest"
             }
         }
     }
