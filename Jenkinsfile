@@ -42,7 +42,7 @@ pipeline {
             steps {
                 echo 'This is a deploy part'
                 sh "docker run -d -p 8000:8000 notes-app:latest"
-                echo "Hey! good How are you?"
+                echo "Hey! good How are you? and good!"
             }
         }
     }
